@@ -20,3 +20,8 @@ body {
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.container {
+    width: auto;
+    margin: 0 auto;
+}

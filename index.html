@@ -12,7 +12,8 @@
 <body>
     <div class="invs" id="score">High Score:</div>
     <div class="quiz-content">
-        <div class="info" id="start-text">
+        <!-- Starting prompt -->
+        <div class="quiz-prompts" id="start-text">
             <h1>Coding Quiz</h1>
             <p>
                 Try to answer the following code-related questions within the time limit.Keep in mind that incorrect 
@@ -20,11 +21,20 @@
             </p>
             <button class="btn" id="start">Begin Quiz</button>
         </div>
+
+        <!-- Questions -->
+        <div class="quiz-prompts invs" id="questions">
+            <h3 id="question-name"></h3>
+            <div id="choices"> </div>
+        </div>
+        <button id="reset" class="invs" onclick="window.location.reload()">Reset</button>
+        <!-- Timer -->
+        <div class="invs" id="Timer">100</div>
     </div>
 
-    <div>
-        
-    </div>
+    <button id="high-score">YOUR HIGH SCORE</button>
+    <button class="invs" id="score-hidden">CLOSE HIGH SCORE</button>
+    <div id="score" class="invs"></div>
 
     <script src="./assets/js/script.js"></script>
 </body>
