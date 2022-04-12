@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #000000;
+    --secondary: #6e06b4;
+    --tertiary: rgb(255, 110, 243);
+    --grey: #333;
+    font-size: 62.5%;
+}
+
+body {
+    background: #ededed;
+    color: var(--grey);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
