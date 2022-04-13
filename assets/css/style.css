@@ -58,7 +58,7 @@ body div div h1 {
 
 .btn {
     padding: 10px;
-    margin: 0 auto;
+    margin: 5px auto;
     background-color: var(--secondary);
     color: #ededed;
     border: 1px solid var(--grey);
