@@ -19,9 +19,52 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
-.container {
+body div div p {
+    font-size: 25px;
+}
+
+body div div h1 {
+    font-size: 25px;
+}
+
+.quiz-prompts {
+    text-align: center;
+}
+
+#timer {
+    position: fixed;
+    padding: 15px;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+}
+
+#score {
+    position: fixed;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+}
+
+.quiz-content {
     width: auto;
     margin: 0 auto;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px;
+    margin: 0 auto;
+    background-color: var(--secondary);
+    color: #ededed;
+    border: 1px solid var(--grey);
+
+}
+
+.invs {
+    display: none;
 }
