@@ -10,33 +10,68 @@
 </head>
 
 <body>
-    <div class="invs" id="score">High Score:</div>
-    <div class="quiz-content">
-        <!-- Starting prompt -->
-        <div class="quiz-prompts" id="start-text">
-            <h1>Coding Quiz</h1>
-            <p>
-                Try to answer the following code-related questions within the time limit.Keep in mind that incorrect 
-                answers will penalize you score/time by ten seconds!
-            </p>
-            <button class="btn" id="start">Begin Quiz</button>
+    <div class="container">
+        <div id="header-container">
+            <div id="header" class="flex-between">
+                <button class="link" onclick="showHighScores()">View high scores</button>
+                <p>Time: <span id="timer"></span></p>
+            </div>
         </div>
-
-        <!-- Questions -->
-        <div class="quiz-prompts invs" id="questions">
-            <h3 id="question-name"></h3>
-            <div id="choices"> </div>
+        <div class="page-container">
+            <div id="start">
+                <h1>Pokemon Quiz Challenge</h1>
+                <p>Try to answer the following Pokemon-related questions within the time limit. Keep in mind that
+                    incorrect
+                    answers will penalize your score/time by 10 seconds!</p>
+                <button onclick="startQuiz()">Start</button>
+            </div>
+            <div id="quiz">
+                <div id="question">
+                    <h1 id="question-title"></h1>
+                    <div class="buttons-container">
+                        <button id="answer-1" onclick="attemptAnswer(0)"></button>
+                        <button id="answer-2" onclick="attemptAnswer(1)"></button>
+                        <button id="answer-3" onclick="attemptAnswer(2)"></button>
+                        <button id="answer-4" onclick="attemptAnswer(3)"></button>
+                    </div>
+                </div>
+                <hr />
+                <div id="correct-container">
+                    <h1 id="correct" class="green">Correct!</h1>
+                    <h1 id="incorrect" class="red">Incorrect!</h1>
+                </div>
+            </div>
+            <div id="finish">
+                <h1 id="score"></h1>
+                <p>Would you like to save your initials and score to the high scores list?</p>
+                <div class="initials-container flex-between">
+                    <p id="saved-score" class="green center">Score saved successfully.</p>
+                    <input id="initials" placeholder="Initials" maxlength="3" type="text" />
+                    <button id="save-score" class="small-btn" onclick="saveHighScore()">Save</button>
+                </div>
+                <div class="horizontal-buttons-container">
+                    <button onclick="startQuiz()">Restart Quiz</button>
+                    <button onclick="showHighScores()">View High Scores</button>
+                </div>
+            </div>
+            <div id="highscores">
+                <button class="link" onclick="showStart()">Home</button>
+                <h1>High Scores</h1>
+                <table id="scores-table">
+                    <tr>
+                        <th width="50%">Initials</th>
+                        <th width="50%">Score</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p id="no-scores" class="center">There are no scores to display.</p>
+            </div>
         </div>
-        <button id="reset" class="invs btn" onclick="window.location.reload()">Reset</button>
-        <!-- Timer -->
-        <div class="invs" id="timer">100</div>
     </div>
-
-    <button id="high-score" class="btn">YOUR HIGH SCORE</button>
-    <button class="invs btn" id="score-hidden">CLOSE HIGH SCORE</button>
-    <div id="score" class="invs"></div>
-
     <script src="./assets/js/script.js"></script>
 </body>
 
-</html>
+</html>`
