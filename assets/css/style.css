@@ -3,68 +3,143 @@
 }
 
 :root {
-    --primary: #000000;
-    --secondary: #6e06b4;
-    --tertiary: rgb(255, 110, 243);
-    --grey: #333;
     font-size: 62.5%;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+
 body {
-    background: #ededed;
-    color: var(--grey);
     margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
 }
 
-body div div p {
-    font-size: 25px;
-}
-
-body div div h1 {
-    font-size: 25px;
-}
-
-.quiz-prompts {
-    text-align: center;
-}
-
-#timer {
-    position: fixed;
-    padding: 15px;
-    top: 0;
-    right: 0;
-    font-size: 20px;
-}
-
-#score {
-    position: fixed;
-    padding: 15px;
-    top: 0;
-    left: 0;
-    font-size: 20px;
-}
-
-.quiz-content {
-    width: auto;
-    margin: 0 auto;
-    justify-content: center;
-}
-
-.btn {
-    padding: 10px;
-    margin: 5px auto;
-    background-color: var(--secondary);
-    color: #ededed;
-    border: 1px solid var(--grey);
-
-}
-
-.invs {
+.hidden {
     display: none;
-}
+  }
+  
+  p, button.link {
+    font-size: 16px;
+  }
+  
+  hr {
+    border: none;
+    background-color: #f0f0f0;
+    height: 6px;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  th {
+    padding: 6px;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #c7c0e0;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #e8e5f3;
+  }
+  
+  td {
+    padding: 9px;
+  }
+  
+  button, input {
+    border-radius: 9px;
+    padding: 12px 24px;
+  }
+  
+  input {
+    border: none;
+    background-color: #c7c0e0;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    background-color: #2E1A6E;
+    color: #FFF;
+    border: none;
+    font-size: 20px;
+  }
+  
+  button.link {
+    padding: 12px 0px;
+    color: #000;
+    border: none;
+    background-color: transparent;
+  }
+  
+  button.small-btn {
+    font-size: 14px;
+  }
+  
+  .container {
+    margin: 0px 30px;
+  }
+  
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  #start, #finish {
+    text-align: center;
+  }
+  
+  #question {
+    margin-bottom: 30px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .buttons-container > button {
+    margin: 3px 0px;
+    text-align: left;
+  }
+  
+  .horizontal-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .horizontal-buttons-container > button {
+    margin: 3px;
+  }
+  
+  .initials-container {
+    margin-bottom: 15px;
+  }
+  
+  #correct-container {
+    font-weight: 800;
+  }
+  
+  .green {
+    color: #3BC493;
+  }
+  
+  .red {
+    color: #C43B6C;
+  }
+  
+  .center {
+    text-align: center;
+    width: 100%;
+  }
+  
+  #initials {
+    margin-right: 3px;
+  }
